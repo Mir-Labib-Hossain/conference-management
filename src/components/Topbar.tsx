@@ -6,7 +6,7 @@ type Props = {};
 const Topbar = (props: Props) => {
   return (
     <div className="max-w-[1320px] mx-auto mt-10 flex items-center justify-between">
-      <Image src="/images/navbar-logo.svg" alt="logo" width={117} height={32} />
+      <Image src="/images/navbar-logo.svg" alt="topbar" width={117} height={32} />
       <div className="flex gap-14">
         <Link href="#" className="hover:text-primary duration-300">
           About Us

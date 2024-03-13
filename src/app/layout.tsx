@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Topbar from "@/components/Topbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -21,6 +22,7 @@ export default function RootLayout({
         <div className="">
           <Topbar />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
