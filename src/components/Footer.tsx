@@ -1,8 +1,6 @@
 import Image from "next/image";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <div className="h-[336px] bg-secondary flex flex-col gap-[78px] items-center justify-center">
       <Image src="/images/footer-logo.svg" alt="footer" width={117} height={32} />
