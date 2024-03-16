@@ -16,7 +16,7 @@ const Hero = () => {
         }}
       />
       <div className="relative max-lg:hidden">
-        <div className="cursor-pointer hover:text-primary ease-in-out duration-300 absolute rotate-[270deg] bottom-6 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sm">&#9664; Scroll Down</div>
+        <a href="#conference" className="cursor-pointer hover:text-primary ease-in-out duration-300 absolute rotate-[270deg] bottom-6 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sm" >&#9664; Scroll Down</a>
         <div className="grid grid-cols-12 gap-9 h-screen items-end p-3">
           <div className="col-span-7">
             <div className="flex flex-col items-end">

@@ -4,7 +4,9 @@ import Link from "next/link";
 const Topbar = () => {
   return (
     <div className="max-w-[1320px] mx-auto mt-10 max-lg:mt-11 px-7 flex items-center justify-between">
-      <Image src="/images/navbar-logo.svg" alt="topbar" className="max-lg:w-[58px] max-lg:h-[16px]" width={117} height={32} />
+      <Link href="/">
+        <Image src="/images/navbar-logo.svg" alt="topbar" className="max-lg:w-[58px] max-lg:h-[16px]" width={117} height={32} />
+      </Link>
       <div className="flex gap-14 max-lg:hidden">
         <Link href="#" className="hover:text-primary duration-300">
           About Us
