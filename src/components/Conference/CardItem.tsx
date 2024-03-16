@@ -1,5 +1,5 @@
-import { log } from "console";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   data: {
@@ -16,22 +16,29 @@ type Props = {
 };
 
 const CardItem = ({ data }: Props) => {
-    
-    const { description, src, title, social } = data;
-    console.log(data);
+  const { description, src, title, social } = data;
+  console.log("CardItem", data);
   return (
-    <div className="flex flex-col bg-white">
+    <div className="flex flex-col bg-white rounded-lg">
       <div className="p-4 flex gap-10">
         <Image src={src} height={140} width={140} alt="card-item" className="h-[140px]" />
-        <div className="flex flex-col gap-5">
-          <div className="flex">
+        <div className="flex flex-col gap-5 w-full">
+          <div className="flex justify-between">
             <p className="text-xl font-bold">{title}</p>
             {social && (
-              <div className="flex gap-8">
-                <Image src="/images/social-media/x-icon.svg" alt="x" width={24} height={24} />
-                <Image src="/images/social-media/linkedin-icon.svg" alt="x" width={24} height={24} />
-                <Image src="/images/social-media/facebook-icon.svg" alt="x" width={24} height={24} />
-                <Image src="/images/social-media/dribble-icon.svg" alt="x" width={24} height={24} />
+              <div className="flex gap-4 invert opacity-15">
+                <Link href={social.x}>
+                  <Image src="/images/social-media/x-icon.svg" alt="x" width={20} height={20} />
+                </Link>
+                <Link href={social.linkedin}>
+                  <Image src="/images/social-media/linkedin-icon.svg" alt="x" width={20} height={20} />
+                </Link>
+                <Link href={social.dribble}>
+                  <Image src="/images/social-media/dribble-icon.svg" alt="x" width={20} height={20} />
+                </Link>
+                <Link href={social.github}>
+                  <Image src="/images/social-media/github-icon.svg" alt="x" width={20} height={20} />
+                </Link>
               </div>
             )}
           </div>

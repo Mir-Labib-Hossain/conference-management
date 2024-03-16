@@ -21,7 +21,7 @@ const Conference = ({ children }: Props) => {
         <div className="col-span-4">
           <Sidebar index={index} />
         </div>
-        <div className="col-span-8 p-[52px] bg-[#F9FAFB] flex flex-col gap-6">{children}</div>
+        <div className="col-span-8 p-[52px] rounded-lg bg-[#F9FAFB] flex flex-col gap-6">{children}</div>
       </div>
     </div>
   );

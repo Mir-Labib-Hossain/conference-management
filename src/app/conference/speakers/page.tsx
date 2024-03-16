@@ -1,8 +1,6 @@
 import CardItem from "@/components/Conference/CardItem";
 
-type Props = {};
-
-const Speakers = (props: Props) => {
+const Speakers = () => {
   return (
     <>
       {SpeakersList.map((item) => (
