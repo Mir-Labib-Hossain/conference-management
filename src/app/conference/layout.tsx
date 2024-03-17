@@ -17,11 +17,11 @@ const Conference = ({ children }: Props) => {
     <div className="max-w-[1320px] mx-auto my-24 max-lg:my-12 px-7">
       <p className="text-secondary text-5xl max-lg:text-2xl font-bold">{title}</p>
       <p className="text-[#0A142F] text-xl max-lg:text-base opacity-50 mt-4 mb-[52px] max-lg:mb-10">{description}</p>
-      <div className="grid grid-cols-12 gap-12">
-        <div className="col-span-4">
+      <div className="grid grid-cols-12 gap-12 max-lg:flex max-lg:flex-col max-lg:gap-0">
+        <div className="col-span-4 overflow-x-hidden">
           <Sidebar index={index} />
         </div>
-        <div className="col-span-8 p-[52px] rounded-lg bg-[#F9FAFB] flex flex-col gap-6">{children}</div>
+        <div className="col-span-8 p-[52px] max-lg:p-5 rounded-lg bg-[#F9FAFB] flex flex-col gap-6">{children}</div>
       </div>
     </div>
   );

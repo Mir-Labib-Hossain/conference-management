@@ -20,11 +20,11 @@ const CardItem = ({ data }: Props) => {
   console.log("CardItem", data);
   return (
     <div className="flex flex-col bg-white rounded-lg">
-      <div className="p-4 flex gap-10">
-        <Image src={src} height={140} width={140} alt="card-item" className="h-[140px]" />
-        <div className="flex flex-col gap-5 w-full">
-          <div className="flex justify-between">
-            <p className="text-xl font-bold">{title}</p>
+      <div className="p-4 flex gap-10 max-lg:gap-3">
+        <Image src={src} height={140} width={140} alt="card-item" className="max-lg:h-[80px] max-lg:w-[80px]" />
+        <div className="flex flex-col gap-5 max-lg:gap-2 w-full">
+          <div className="flex justify-between max-lg:flex-col max-lg:gap-2">
+            <p className="text-xl font-bold max-lg:text-base">{title}</p>
             {social && (
               <div className="flex gap-4 invert opacity-15">
                 <Link href={social.x}>
@@ -42,7 +42,7 @@ const CardItem = ({ data }: Props) => {
               </div>
             )}
           </div>
-          <p className="text-secondary">{description}</p>
+          <p className="text-secondary max-lg:text-xs">{description}</p>
         </div>
       </div>
     </div>
