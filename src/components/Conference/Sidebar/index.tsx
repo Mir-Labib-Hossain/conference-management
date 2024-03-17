@@ -15,16 +15,15 @@ const Sidebar = ({ index }: Props) => {
 
   return (
     <div className="flex flex-col gap-8 max-lg:w-[300px] overflow-x-hidden">
-      <DraggableList width={360} height={86} rowSize={1}>
+      <DraggableList width={335} height={86} rowSize={1}>
         {list.map(({ url, title }, index) => (
-          <>
-            <ConferenceLink key={index} href={url}>
-              {title}
-            </ConferenceLink>
-          </>
+          <ConferenceLink key={url} href={url}>
+            {title}
+          </ConferenceLink>
         ))}
       </DraggableList>
     </div>
   );
 };
+
 export default Sidebar;
